@@ -1,0 +1,111 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, rgb(10, 150, 250), rgb(50, 255, 120));
+    color: rgb(250, 50, 25);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.welcome {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.calculator-grid {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+}
+
+.calculator-grid > button {
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, .75);
+}
+
+.calculator-grid > button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    min-height: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 15px 8px 15px 8px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-operand {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, .75);
+}
+
+.current-operand {
+    font-size: 45px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, .75);
+}
+
+.coin-counter-grid {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 600px;
+    height: 400px;
+}
+
+.coin-counter-grid > label {
+    color: rgba(255, 255, 255, 0.9);
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.coin-counter-grid > input {
+    width: 125px;
+    height: 25px;
+}
+
+.coin-counter-grid > button {
+    margin-left: 0px;
+}

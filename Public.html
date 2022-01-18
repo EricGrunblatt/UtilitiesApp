@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+@author Eric Grunblatt
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./App.css" />
+        <script src="Calculator.js" defer></script> 
+        <script src="CoinCounter.js" defer></script>
+    </head>
+    <body>
+        <div class="welcome">
+            Welcome to the Utilities App
+        </div>
+        <div class="coin-counter-grid">
+            Bills <br>
+            <label for="D100" type="text">$100</label>
+            <label for="D50" type="text">$50</label>
+            <label for="D20" type="text">$20</label>
+            <label for="D10" type="text">$10</label><br>
+            <input id="D100" type="text">
+            <input id="D50" type="text">
+            <input id="D20" type="text">
+            <input id="D10" type="text"><br>
+            <label for="D5" type="text">$5</label>
+            <label for="D2" type="text">$2</label>
+            <label for="D1" type="text">$1</label><br>
+            <input id="D5" type="text">
+            <input id="D2" type="text">
+            <input id="D1" type="text"><br>
+            <br>
+            Coins <br>
+            <label for="B1" type="text">$1</label>
+            <label for="C0.5" type="text">50¢</label>
+            <label for="C0.25" type="text">25¢</label><br>
+            <input id="B1" type="text">
+            <input id="C0.5" type="text">
+            <input id="C0.25" type="text"><br>
+            <label for="C0.1" type="text">10¢</label>
+            <label for="C0.05" type="text">5¢</label>
+            <label for="C0.01" type="text">1¢</label><br>
+            <input id="C0.1" type="text">
+            <input id="C0.05" type="text">
+            <input id="C0.01" type="text"><br>
+            <br>
+            <button class="calculate">Calculate</button>
+            <button class="reset">Reset</button><br>
+            <br>
+            <div data-solution class="coin-solution"></div>
+        </div>
+        <div class="calculator-grid">
+            <div class="output">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </div>
+            <button data-all-clear class="span-two">AC</button>
+            <button data-delete>DEL</button>
+            <button data-operation>÷</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation>*</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation>-</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation>+</button>
+            <button data-number>0</button>
+            <button data-number>.</button>
+            <button data-equals class="span-two">=</button>
+        </div>
+    </body>
+</html>
